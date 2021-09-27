@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oscars Query</title>
+    <link rel="stylesheet" type="text/css" href="oscars-query.css">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Oscars Form</h1>
+        <form>
+            <label for="txt-year">Filter by year:</label>
+            <input type="text" id="txt-year" name="txt-year"><br>
+
+            <label for="txt-cat">Filter by category:</label>
+            <input type="text" id="txt-cat" name="txt-cat"><br>
+
+            <label for="txt-nominee">Filter by nominee:</label>
+            <input type="text" id="txt-nominee" name="txt-nominee"><br>
+
+            <label for="txt-info">Filter by info:</label>
+            <input type="text" id="txt-info" name="txt-info"><br>
+
+            <label for="txt-nominee-info">Filter by nominee or info:</label>
+            <input type="text" id="txt-nominee-info" name="txt-nominee-info"><br>
+
+            <label for="select-won">Select won or not:</label>
+            <select id="select-won">
+                <option value="none" selected>None</option>
+                <option value="won">Won</option>
+                <option value="not-won">Not won</option>
+            </select><br>
+
+            <label for="select-year">Select a year:</label>
+            <select id="select-year">
+                <option value="none" selected>None</option>
+            </select>
+        </form>
+
+        <button id="btn-search">Search</button>
+        <button id="btn-clear">Clear</button>
+
+        <h1>Oscars Result</h1>
+        <table id="data">
+            <tr>
+                <th id="col-year">Year</th>
+                <th id="col-cat">Category</th>
+                <th id="col-nominee">Nominee</th>
+                <th id="col-info">Info</th>
+                <th id="col-won">Won?</th>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="oscars-query.js"></script>
+</body>
+
+</html>
